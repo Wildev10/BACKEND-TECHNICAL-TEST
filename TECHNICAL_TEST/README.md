@@ -782,7 +782,7 @@ php artisan test --coverage
 
 ---
 
-## 📁 Structure des Tests
+##  Structure des Tests
 
 ```
 tests/

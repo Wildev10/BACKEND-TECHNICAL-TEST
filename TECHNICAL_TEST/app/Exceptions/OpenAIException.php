@@ -15,7 +15,7 @@ class OpenAIException extends Exception
     }
 
     /**
-     * Get the exception context
+     * Récupère le contexte de l'exception
      *
      * @return array
      */
@@ -25,7 +25,7 @@ class OpenAIException extends Exception
     }
 
     /**
-     * Report the exception
+     * Signale l'exception
      *
      * @return bool
      */
@@ -35,7 +35,7 @@ class OpenAIException extends Exception
     }
 
     /**
-     * Render the exception as an HTTP response
+     * Rend l'exception sous forme de réponse HTTP
      *
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\JsonResponse

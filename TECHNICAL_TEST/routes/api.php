@@ -10,20 +10,20 @@ use App\Http\Controllers\Education\LessonSummaryController;
 use App\Http\Controllers\Education\QuizGeneratorController;
 use App\Http\Controllers\Education\HistoryController;
 
-// Public routes
+// Routes publiques
 Route::prefix('auth')->group(function () {
     Route::post('register', [RegisterController::class, 'register']);
     Route::post('login', [LoginController::class, 'login']);
 });
 
-// Protected routes
+// Routes protégées
 Route::middleware('auth:sanctum')->group(function () {
 
-    // Auth
+    // Authentification
     Route::post('auth/logout', [LoginController::class, 'logout']);
     Route::get('auth/me', [LoginController::class, 'me']);
 
-    // Education endpoints
+    // Endpoints éducatifs
     Route::prefix('education')->group(function () {
 
         // Explication de concept

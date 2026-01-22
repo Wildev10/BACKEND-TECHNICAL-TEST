@@ -4,13 +4,14 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Third Party Services
+    | Services Tiers
     |--------------------------------------------------------------------------
     |
-    | This file is for storing the credentials for third party services such
-    | as Mailgun, Postmark, AWS and more. This file provides the de facto
-    | location for this type of information, allowing packages to have
-    | a conventional file to locate the various service credentials.
+    | Ce fichier sert à stocker les identifiants pour les services tiers tels
+    | que Mailgun, Postmark, AWS et plus. Ce fichier fournit l'emplacement
+    | de facto pour ce type d'information, permettant aux packages d'avoir
+    | un fichier conventionnel pour localiser les différentes informations
+    | de connexion des services.
     |
     */
 
@@ -43,5 +44,5 @@ return [
         'temperature' => env('OPENAI_TEMPERATURE', 0.7),
     ],
 
-    
+
 ];

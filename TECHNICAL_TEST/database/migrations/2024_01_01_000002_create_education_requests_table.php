@@ -11,8 +11,8 @@ return new class extends Migration
         Schema::create('education_requests', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->string('type'); // concept_explanation, exercise_generation, etc.
-            $table->string('status')->default('pending'); // pending, processing, completed, failed
+            $table->string('type'); // explication_concept, generation_exercices, etc.
+            $table->string('status')->default('pending'); // en_attente, en_traitement, termine, echoue
             $table->text('prompt'); // Contenu envoyé
             $table->longText('response')->nullable(); // Réponse générée
             $table->json('metadata')->nullable(); // Données additionnelles (niveau, sujet, etc.)

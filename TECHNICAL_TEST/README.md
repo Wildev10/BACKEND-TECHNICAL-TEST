@@ -565,7 +565,10 @@ if (jsonData.data && jsonData.data.token) {
 | **Méthode** | `POST` |
 | **URL** | `{{base_url}}/education/generate-quiz` |
 | **Auth** | Bearer Token `{{token}}` |
-
+{
+ "email": "wilfried.dupont@example.com",
+ "password": "MonMotDePasse123!"
+}
 **Body (raw JSON)** :
 ```json
 {
